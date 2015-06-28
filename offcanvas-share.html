@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" >
+	<head>
+		
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<script type="text/javascript" src="assets/js/angular.min.js"></script>
+		<script type="text/javascript" src="assets/js/App.js"></script>
+		<title>OffCanvas Social Share</title>
+	</head>
+	<body data-ng-app="offCanvasShare">
+		<div  data-ng-controller="offCanvasShareCtrl">
+			<div class="offcanvasShareContainer {{itsopenc}}">
+				<div class="container-content">
+					<!-- facebook -->
+					<a class="social-icons" ng-href="http://www.facebook.com/sharer.php?u={{pageUrl}}" target="_blank">
+						<img src="assets/imgs/facebook.png" alt="">
+					</a>
+					<!-- google plus -->
+					<a class="social-icons" ng-href="https://plus.google.com/share?url={{pageUrl}}" target="_blank">
+						<img src="assets/imgs/googleplus.png" alt="">
+					</a>
+					<!-- twitter -->
+					<a class="social-icons" ng-href="http://twitter.com/share?text={{pageTitle}}+{{pageUrl}}&url={{pageUrl}}" target="_blank">
+						<img src="assets/imgs/twitter.png" alt="">
+					</a>
+					<!-- Pinterest -->
+					<a class="social-icons" ng-href="https://pinterest.com/pin/create/button/?url={{pageUrl}}&media=&description=" target="_blank">
+						<img src="assets/imgs/pinterest.png" alt="">
+					</a>
+					
+					<!-- linkedin -->
+					<a class="social-icons" ng-href="http://www.linkedin.com/shareArticle?mini=true&url={{pageUrl}}&title={{pageTitle}}&source={{pagehost}}" target="_blank">
+						<img src="assets/imgs/linkedin.png" alt="">
+					</a>
+					
+					<!-- Stumbleupon -->
+					<a class="social-icons" ng-href="http://www.stumbleupon.com/submit?url={{pageUrl}}&title={{pageTitle}}" target="_blank">
+						<img src="assets/imgs/stumbleupon.png" alt="">
+					</a>
+				</div>
+				<a class="{{ shareBtnClass }}" ng-click="itsopen(); namechange()">
+					{{ shareBtn }}
+				</a>
+			</div>
+		</div>
+	</body>
+</html>
