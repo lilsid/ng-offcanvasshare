@@ -1,7 +1,7 @@
 # ng-offcanvasshare
 An AngularJS based Offcanvas Share palette
 
-<a href="http://lilsid.github.io/ng-offcanvasshare/">Click here to see the DEMO</a>
+<a href="http://lilsid.github.io/ng-offcanvasshare/" target="_blank">Click here to see the DEMO</a>
 
 This is a Angular JS based Stick share buttons which will be located on the left in approximately mid-left.
 
